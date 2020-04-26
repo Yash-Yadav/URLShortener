@@ -174,7 +174,7 @@ and the Table code below the Table Comment `<!-- URLs Table -->`:
 * We'll replace the Connection String from the cluster's string from our Atlas Account (if you still don't have an account, click [here](https://www.mongodb.com/atlas-signup-from-mlab) to create one)
 * After Logging in to the Atals, create a free Cluster and add a database user in it
   - ![alt text](./img/09.png "")
-  - ![alt text](./img/10.png "")
+  - ![alt text](./img/10.gif "")
 * Now use the below code in the `db.js` file inside the config (folder):
 ```javascript
 const mongoose = require('mongoose');
@@ -203,7 +203,7 @@ const connectDB = require('./config/db');
 // Connect to Database
 connectDB();
 ```
-  - ![alt text](./img/11.gif "")
+  - ![alt text](./img/11.png "")
 * So we're now connected with our Database
 ## Creating a Schema for our Data
 * Place the below Schema code into the `Url.js` present in the `models` folder
