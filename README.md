@@ -1,4 +1,3 @@
-"# URLShortener" 
 # Creating a URL Shortener using NodeJS
 
 ## Prerequisite
