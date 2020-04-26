@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNITE- URL Shortner 😍</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container-fluid">
+    
+    <div class="jumbotron" style="text-align: center;">
+      <h1 class="display-4">Welcome to the URL Shortner</h1>
+    </div>
+    
+    <!-- FORM -->
+    <form action="/shorten/" method="POST" style="padding: 0 25px 0 25px;">
+      <div class="form-group row justify-content-md-center">
+        <label class="col-lg-1 col-md-10" for="longUrl">Long URL: </label>
+        <input required="" type="url" class="col-lg-3 col-12 form-control" name="longUrl" id="longUrl" placeholder="Enter your Name">
+      </div>
+      <div class="form-group row justify-content-md-center">
+        <label class="col-lg-1 col-md-10" for="shortUrl">Short URL: </label>
+        <input type="text" class="col-lg-3 col-12 form-control" id="shortUrl" name="shortUrl" placeholder="Enter the custom name (if any)">
+      </div>
+      <div class="form-group row justify-content-md-center">
+        <button type="submit" class="col-12 col-lg-4 btn btn-primary">Submit</button>
+      </div>
+    </form>
+
+    
+    <!-- URLs Table -->
+    <div style="margin: auto;" class="row justify-content-md-center table-responsive-sm">
+      <table style="padding: 0 25px 0 25px;" class="table table-hover col-12 col-md-10 col-lg-6">
+        <thead>
+          <tr>
+          <th># ID</th>
+          <th>Long URL</th>
+          <th>Short URL</th>
+          <th>Clicks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%
+            var index = 1;
+            urls.forEach(url => { %>
+          <tr>
+            <th scope="row"><%=index %></th>
+            <td><a target="_blank" href="<%= url.longUrl %>"><%= url.longUrl %></a></td>
+            <td><a target="_blank" href="<%= url.urlCode %>"><%= url.urlCode %></a></td>
+            <td><%= url.clicks %></td>
+          </tr>
+          <%
+          index+=1;
+          }) %>
+        </tbody>
+      </table>
+    </div>
+
+    
+    <footer class="footer container-fluid my-4">
+      <hr>
+      <span class="row justify-content-center text-muted">
+        Copyright
+        <% const date = new Date(); %>
+        <%= date.getFullYear() %>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
