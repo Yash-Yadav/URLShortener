@@ -7,14 +7,14 @@ On the Command line navigate to the directory where you want to save the project
 * `cd URLShortener`
 * `npm init -y`
   - What this will do is that it will keep init output as per the default template.
-  - <IMG>
+  - ![alt text](./img/01.png "")
 * Explore what `package.json` is. Mainly mention the entrypoint which is `main: index.js`
 * How to open the terminal in VSCode (`View > Terminal`)
 * Let's install other libraries as well at once, so type in the below command:
   - `npm install express ejs config mongoose shortid valid-url --save`
-  - <IMG>
+  - ![alt text](./img/02.png "")
   - What the above step will do is it will record the names of the dependencies which are required to run the package.  
-  - <IMG>
+  - ![alt text](./img/03.png "")
 * Create the file `index.js`
 * Type in/snippet/copy/paste the following content.
 ```javascript
@@ -28,10 +28,10 @@ app.get('/', (req, res) => res.send('Hello world'));
 app.listen(port, () => console.log('Application started at => http://localhost:'+port));
 ```
 * Run the code by this command: `node index.js` and go to localhost:3000. To see the Home Page.
-  - <IMG>
+  - ![alt text](./img/04.png "")
 * Next let's just get rid of this continuously pressing F5 or typing in `node index.js` again and again.
 * So to automate this process we've a papckage called "nodemon". So lets install it: `npm i nodemon --save-dev`
-  - <IMG>
+  - ![alt text](./img/05.png "")
 * Now lets see the `package.json` file, and add some script to it, so that it can trigger nodemon whenever we run that dev script.
 * Replace the below snippet with the later one:
   - To be replaced
@@ -47,7 +47,7 @@ app.listen(port, () => console.log('Application started at => http://localhost:'
         "dev": "nodemon index"
       }
       ```
-  - <IMG>
+  - ![alt text](./img/06.png "")
 * Use the below code snippet in the `index.js` file (remove all the previous code):
 ```javascript
 const express = require('express');
@@ -119,7 +119,7 @@ app.listen(port, () =>
 * In this above code we've used a 3rd party frontend css library to speed up our front end jobs beautifully.
 * Now lets see the implementation of the said tool `nodemon`.
 * in the command line, preferably in the VS Code, type: `npm run dev`
-  - <IMG>
+  - ![alt text](./img/07.png "")
 * Now comes the snippet for the url shortening form in teh `home.ejs` file. Place the below snippet right below the `<!-- FORM -->` Comment in the html file:
 ```html
 <!-- FORM -->
@@ -162,7 +162,7 @@ and the Table code below the Table Comment `<!-- URLs Table -->`:
     </div>
 ```
 * Now refresh the browser page
-  - <IMG>
+  - ![alt text](./img/08.png "")
 ## Connecting to our Database
 * Now lets head to the package that we added `config` in the `npm install` command, what it does is that it will look for `default.json` file inside config (folder) which we created earlier that will consist of the global variables for our project. 
 * Now lets open that `default.json` file and place the below snippet in it:
@@ -173,7 +173,8 @@ and the Table code below the Table Comment `<!-- URLs Table -->`:
 ```
 * We'll replace the Connection String from the cluster's string from our Atlas Account (if you still don't have an account, click [here](https://www.mongodb.com/atlas-signup-from-mlab) to create one)
 * After Logging in to the Atals, create a free Cluster and add a database user in it
-  - <IMG>
+  - ![alt text](./img/09.png "")
+  - ![alt text](./img/10.png "")
 * Now use the below code in the `db.js` file inside the config (folder):
 ```javascript
 const mongoose = require('mongoose');
@@ -202,7 +203,7 @@ const connectDB = require('./config/db');
 // Connect to Database
 connectDB();
 ```
-  - <IMG>
+  - ![alt text](./img/11.gif "")
 * So we're now connected with our Database
 ## Creating a Schema for our Data
 * Place the below Schema code into the `Url.js` present in the `models` folder
@@ -374,6 +375,9 @@ const Url = require('./models/Url');
 </div>
 ```
 * Now Run and Test the Newly created Url Shortener.
+  - ![alt text](./img/12.png "")
+  - ![alt text](./img/13.gif "")
+
 Feel Free to contact me. DMs are always Welcome.
 
 ## Pushing the Project to GitHub & deploying the web app to Azure
