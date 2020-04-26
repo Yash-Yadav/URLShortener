@@ -377,5 +377,4 @@ const Url = require('./models/Url');
 Feel Free to contact me. DMs are always Welcome.
 
 ## Pushing the Project to GitHub & deploying the web app to Azure
-
 For the detailed steps follow this [link](https://github.com/Yash-Yadav/TechUniteWebAppsNodeJS/blob/master/demos/README.md#demo-3---pushing-to-azure)
