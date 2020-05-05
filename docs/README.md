@@ -1,7 +1,7 @@
 # Demos
 We'll cover the making of this whole repository in small demos
 If you didn't covered the basic EJS project repo, then visit this [link](https://github.com/Yash-Yadav/TechUniteWebAppsNodeJS)
-## Demo 1 - Setting up the Backend
+## 1-Setting-up-the-Backend
 On the Command line navigate to the directory where you want to save the project on your system, then type in the following commands
 * `mkdir URLShortener`
 * `cd URLShortener`
