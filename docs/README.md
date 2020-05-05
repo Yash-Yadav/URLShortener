@@ -380,5 +380,5 @@ const Url = require('./models/Url');
 
 Feel Free to contact me. DMs are always Welcome.
 
-## Pushing-Project-to-GitHub-&-Azure
+## Pushing-Project-to-GitHub-and-Azure
 For the detailed steps follow this [link](https://github.com/Yash-Yadav/TechUniteWebAppsNodeJS/blob/master/demos/README.md#demo-3---pushing-to-azure)
