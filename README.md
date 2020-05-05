@@ -20,7 +20,7 @@ Deploying the webapp to Azure via [GitHub Actions](https://help.github.com/en/ac
 
 | Resource         | Links                            |
 |-------------------|----------------------------------|
-| Demos             | - [1-Setting-Backend](./docs/README.md#1-Setting-up-the-Backend)<br/>- [Setting-up-Directory-structure](./docs/README.md#Setting-up-Directory-structure) <br/>- [Building-a-basic-Front-End](./docs/README.md#Building-a-basic-Front-End) <br/>- [Connecting-to-our-Database](./docs/README.md#Connecting-to-our-Database) <br/>- [Setting-up-the-Routes-for-the-app](./docs/README.md#Setting-up-the-Routes-for-the-app) <br/>- [Pushing-Project-to-GitHub-&-Azure](./docs/README.md#Pushing-Project-to-GitHub-and-Azure) |
+| Demos             | - [1-Setting-Backend](./docs/README.md#1-Setting-up-the-Backend)<br/>- [Setting-up-Directory-structure](./docs/README.md#Setting-up-Directory-structure) <br/>- [Building-a-basic-Front-End](./docs/README.md#Building-a-basic-Front-End) <br/>- [Connecting-to-our-Database](./docs/README.md#Connecting-to-our-Database) <br/>- [Setting-up-the-Routes-for-the-app](./docs/README.md#Setting-up-the-Routes-for-the-app) <br/>- [Pushing-Project-to-GitHub-and-Azure](./docs/README.md#Pushing-Project-to-GitHub-and-Azure) |
 
 <table>
 <tr>
