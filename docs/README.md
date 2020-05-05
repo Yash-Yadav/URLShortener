@@ -67,7 +67,7 @@ app.listen(port, () =>
   console.log('Application started at => http://localhost:'+port));
 ```
 * Here the statement app.use(express.json(-------)); is a [Middleware](https://azure.microsoft.com/en-us/overview/what-is-middleware/) which will allow us to accept JSON data into our API.
-## Setting up Directory structure
+## Setting-up-Directory-structure
 * Create folders & files inside the project directory as per thie below given List:
   * config (Folder)
     - `db.js`
@@ -79,7 +79,7 @@ app.listen(port, () =>
     - `url.js`
   * views (Folder)
     - `home.ejs`
-## Building a basic Front End
+## Building-a-basic-Front-End
 * Now use the below snippet for the `home.ejs` file:
 ```html
 <!DOCTYPE html>
@@ -163,7 +163,7 @@ and the Table code below the Table Comment `<!-- URLs Table -->`:
 ```
 * Now refresh the browser page
   - ![alt text](./img/08.png "")
-## Connecting to our Database
+## Connecting-to-our-Database
 * Now lets head to the package that we added `config` in the `npm install` command, what it does is that it will look for `default.json` file inside config (folder) which we created earlier that will consist of the global variables for our project. 
 * Now lets open that `default.json` file and place the below snippet in it:
 ```json
@@ -226,7 +226,7 @@ const urlSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('Url', urlSchema);
 ```
-## Setting up the Routes for the app
+## Setting-up-the-Routes-for-the-app
 * So as we created a folder of `routes` earlier, we'll use it store various routes of our app.
 before that let's link those routes in the main `index.js` file.
 * Place the below code in the `index.js` file right before the get('/'----) route:
@@ -380,5 +380,5 @@ const Url = require('./models/Url');
 
 Feel Free to contact me. DMs are always Welcome.
 
-## Pushing the Project to GitHub & deploying the web app to Azure
+## Pushing-Project-to-GitHub-&-Azure
 For the detailed steps follow this [link](https://github.com/Yash-Yadav/TechUniteWebAppsNodeJS/blob/master/demos/README.md#demo-3---pushing-to-azure)
